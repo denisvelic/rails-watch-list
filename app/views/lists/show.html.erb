@@ -2,11 +2,10 @@
 
 <h2><%= @list.name %></h2>
 
-<%= @list.movies %>
 <ul>
-  <%# <% @list.movies.each do |movie| %> %>
-    <%# <li><%= movie.title</li> %> %>
-  <%# <% <% end %> %> %>
+  <% @list.movies.each do |movie| %>
+    <li><%= image_tag = movie.poster_url %><br><%= movie.title %><br><%= movie.overview %><br>Rating: <%= movie.rating %> </li>
+  <% end %>
 </ul>
 
 
