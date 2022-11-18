@@ -20,8 +20,8 @@ list1 = List.create(name: "Superhero movies")
 list2 = List.create(name: "Love movies")
 list3 = List.create(name: "Action movies")
 
-Bookmark.create(comment: "Cool movie!", movie_id: 2, list_id: 2)
-Bookmark.create(comment: "It was so nice!", movie_id: 3, list_id: 2)
-Bookmark.create(comment: "Wow!", movie_id: 1, list_id: 1)
+Bookmark.create(comment: "Cool movie!", movie_id: Movie.all.sample.id, list_id: List.all.sample.id)
+Bookmark.create(comment: "It was so nice!", movie_id: Movie.all.sample.id, list_id: List.all.sample.id)
+Bookmark.create(comment: "Wow!", movie_id: Movie.all.sample.id, list_id: List.all.sample.id)
 
 puts 'Finished!'
